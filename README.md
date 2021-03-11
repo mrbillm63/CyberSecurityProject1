@@ -68,13 +68,13 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 -  The main advantage that Anisble brings is automation of and simpliplification of repetative, complex, and tedious operations a systems admin.
 
 -The playbook implements the following tasks:
-- ...
-- ...
--   Install: docker.io
--   Install python-pip
--   Install  docker module
--   Increase Memory Use: sysctl -w vm.max_map_count=262144
--   Download and Launch a docker elk container
+- 
+-
+-      Install: docker.io
+-      Install python-pip
+-      Install  docker module
+-      Increase Memory Use: sysctl -w vm.max_map_count=262144
+-      Download and Launch a docker elk container
 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
