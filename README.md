@@ -68,8 +68,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 -  The main advantage that Anisble brings is automation of and simpliplification of repetative, complex, and tedious operations a systems admin.
 
 -The playbook implements the following tasks:
-- 
--
+ 
 -      Install: docker.io
 -      Install python-pip
 -      Install  docker module
@@ -103,16 +102,15 @@ SSH into the control node and follow the steps below:
 - Update the _____ file to include...
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
--  Copy the filebeat.yml file to the /etc/ansible/roles/files/ directory.
+-  Copy the Install_filebeat_Playbook.yml file to the /etc/ansible/roles/files/ directory.
 
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 -  Update the configuration file to include the Private IP of the Elk-Server to the ElasticSearch and Kibana sections of the configuration file.
 -  Create a new playbook in the /etc/ansible/roles/ directory that will install, drop in the updated configuration file, enable and configure system module, run the filebeat setup, and start the filebeat service.
 
 - _Which URL do you navigate to in order to check that the ELK server is running?
-- http://[your.VM.IP]:5601/app/kibana.
+- http://[10.1.0.4]:5601/app/kibana.
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
  The commands needed to run the Ansible configuration for the Elk-Server are:
