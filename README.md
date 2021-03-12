@@ -1,13 +1,13 @@
 # UPENN Bootcamp Cyber Security Project 1 
 ## Authored by William (Bill) Mergo Student 
 
-## Automated ELK Stack Deployment in Azure
+## Automated ELK Stack Deployment in Azure Cloud 
 
 The files in this repository were used to configure the network depicted below.
 
 ![TODO: Update the path with the name of your diagram](Images/CyberSecurity_Project1.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the configuration file may be used to install only certain pieces of it, such as Filebeat.
 
   - ![Install ELK Playbook](Ansible/elk_install_playbook.yml)    - ![Install VM with Docker](Ansible/install_docker_playbook.yml)
   
@@ -26,15 +26,15 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-- Load balancing ensures that the application will be highly available, in addition to restricting access to the network. 
-- Load Balancing contributes to the Availability aspect of security in regards to the CIA Triad by support of redundancy , application performance and application reliability.
+- Load balancing ensures that the application will be highly available, in addition to restricting exposing the backen servers directly to the external internet network
+- Load Balancers contribute to the Availability aspect of security in regards to the CIA Triad by support of redundancy , network performance.
 
-- _JumpBox_ 
+- _JumpBox_ used for System Administration and secured external network access.
 - The advantage of a JumpBox is the orgination point for launching Administrative Tasks. This ultimately sets the JumpBox as a Secure Admin Workstation). All Administrators when conducting any management Tasks will be required to connect to the JumpBox.  The Jumpbox is configured for restrictive access providing a more secure environment.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the filesystm and system resources.
--  Filebeat watches for log files or locations that are configured, collecting log events and fowards them to Elasticsearch or Logstash for indexing
--  Metricbeat records metric and statistical data from the operating system and from the services running on the host servers.
+- _Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the filesystm and system resources._
+-   Filebeat watches for log files or locations that are configured, collecting log events and fowards them to Elasticsearch or Logstash for indexing
+-   Metricbeat records metric and statistical data from the operating system and from the services running on the host servers.
 
 The configuration details of each machine may be found below.
  
