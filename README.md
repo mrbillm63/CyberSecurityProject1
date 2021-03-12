@@ -85,9 +85,10 @@ The following screenshot displays the result of running `docker ps` after succes
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
  
-- We have installed the following Beats on these machines: Red-Web-1 10.0.0.7 Red-Web-2 10.0.0.6
-
-- Filebeat and Metricbeat
+_| VM Host   | Private IP Addresses | Filebeat  Installed | Metricbeat  Installed |_
+ |-----------|----------------------|---------------------|-----------------------|
+ | Red-Web-1 | 10.0.0.7             | Yes                 | Yes                   |
+ | Red-Web-2 | 10.0.0.6             | Yes                 | Yes                   |
 
 These Beats allow us to collect the following information from each machine:
  
