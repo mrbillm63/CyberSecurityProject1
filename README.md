@@ -13,12 +13,12 @@ These files have been tested and used to generate a live ELK deployment on Azure
   
   - ![Install Filebeat Playbook](Ansible/Filebeat_playbook.yml)  
 
-##This document contains the following details:
+## This document contains the following details:
   - Description of the Topologu
   - Access Policies
   - ELK Configuration
-   - Beats in Use
-   - Machines Being Monitored
+    - Beats in Use
+    - Machines Being Monitored
   - How to Use the Ansible Build
 
 
