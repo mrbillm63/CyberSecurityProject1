@@ -1,4 +1,5 @@
-# UPENN Bootcamp Cyber Security Project 1 authored by William (Bill) Mergo
+# UPENN Bootcamp Cyber Security Project 1 
+## Authored by William (Bill) Mergo Student 
 
 ## Automated ELK Stack Deployment in Azure
 
