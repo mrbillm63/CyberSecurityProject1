@@ -84,7 +84,6 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ![Screen Shot Confirmation](Images/docker_elk_screen_verification.png)
 
-
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
  
