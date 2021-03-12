@@ -1,4 +1,6 @@
-## Automated ELK Stack Deployment
+# UPENN Bootcamp Cyber Security Project 1 authored by William (Bill) Mergo
+
+## Automated ELK Stack Deployment in Azure
 
 The files in this repository were used to configure the network depicted below.
 
@@ -23,9 +25,10 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_ Load balancing ensures that the application will be highly available, in addition to restricting access to the network.  Load Balancing contributes to the Availability aspect of security in regards to the CIA Triad.
+- Load balancing ensures that the application will be highly available, in addition to restricting access to the network. 
+- Load Balancing contributes to the Availability aspect of security in regards to the CIA Triad by support of redundancy , application performance and application reliability.
 
+- _JumpBox_ 
 - The advantage of a JumpBox is the orgination point for launching Administrative Tasks. This ultimately sets the JumpBox as a Secure Admin Workstation). All Administrators when conducting any management Tasks will be required to connect to the JumpBox.  The Jumpbox is configured for restrictive access providing a more secure environment.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the filesystm and system resources.
@@ -96,25 +99,16 @@ These Beats allow us to collect the following information from each machine:
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
+ _SSH into the control node (Jump-Box) and follow the steps below:_
+-   Copy the Install_filebeat_Playbook.yml file to the /etc/ansible/roles/files/ directory.
+-   Update the configuration file to include the Private IP (10.1.0.4) of the Elk-Server to the ElasticSearch and Kibana sections of the configuration file
+-   Run the playbook, and navigate to http://[10.1.0.4]:5601/app/kibana  to check that the installation worked as expected.
 
-SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
-
-- _Which file is the playbook? Where do you copy it?_
--  Copy the Install_filebeat_Playbook.yml file to the /etc/ansible/roles/files/ directory.
-
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
--  Update the configuration file to include the Private IP of the Elk-Server to the ElasticSearch and Kibana sections of the configuration file.
 -  Create a new playbook in the /etc/ansible/roles/ directory that will install, drop in the updated configuration file, enable and configure system module, run the filebeat setup, and start the filebeat service.
-
-- _Which URL do you navigate to in order to check that the ELK server is running?
-- http://[10.1.0.4]:5601/app/kibana.
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
  The commands needed to run the Ansible configuration for the Elk-Server are:
-- ssh RedAdmin@JumpBox(PrivateIP)
+- ssh RedAdmin@JumpBox(PrivateIP 10.0.0.4)
 - sudo docker container list -a (locate your ansible container)
 - sudo docker start container (name of the container)
 - sudo docker attach container (name of the container)
