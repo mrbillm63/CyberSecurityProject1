@@ -33,8 +33,8 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 - The advantage of a JumpBox is the orgination point for launching Administrative Tasks. This ultimately sets the JumpBox as a Secure Admin Workstation). All Administrators when conducting any management Tasks will be required to connect to the JumpBox.  The Jumpbox is configured for restrictive access providing a more secure environment.
 
 - _Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the filesystm and system resources._
--   Filebeat watches for log files or locations that are configured, collecting log events and fowards them to Elasticsearch or Logstash for indexing
--   Metricbeat records metric and statistical data from the operating system and from the services running on the host servers.
+   - Filebeat watches for log files or locations that are configured, collecting log events and fowards them to Elasticsearch or Logstash for indexing
+   - Metricbeat records metric and statistical data from the operating system and from the services running on the host servers.
 
 The configuration details of each machine may be found below.
  
