@@ -26,7 +26,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-- Load balancing ensures that the application will be highly available, in addition to restricting exposing the backen servers directly to the external internet network
+- Load balancing ensures that the application will be highly available, in addition to restricting exposing the backend servers directly to the external internet network
 - Load Balancers contribute to the Availability aspect of security in regards to the CIA Triad by support of redundancy , network performance.
 
 - _JumpBox_ used for System Administration and secured external network access.
