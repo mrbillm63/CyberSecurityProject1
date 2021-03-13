@@ -101,7 +101,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
  _SSH into the control node (Jump-Box) and follow the steps below:_
 -   Copy the Install_filebeat_Playbook.yml file to the /etc/ansible/roles/files/ directory.
 -   Update the configuration file to include the Private IP (10.1.0.4) of the Elk-Server to the ElasticSearch and Kibana sections of the configuration file
--   Run the playbook, and navigate to http://[10.1.0.4]:5601/app/kibana  to check that the installation worked as expected.
+  - Run the playbook, and navigate to http://[10.1.0.4]:5601/app/kibana  to check that the installation worked as expected.
 
 -  Create a new playbook in the /etc/ansible/roles/ directory that will install, drop in the updated configuration file, enable and configure system module, run the filebeat setup, and start the filebeat service.
 
@@ -112,7 +112,7 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
 - sudo docker start container (name of the container)
 - sudo docker attach container (name of the container)
 - cd /etc/ansible/
-- ansible-playbook elk.yml (configures Elk-Server and starts the Elk container on the Elk-Server) wait a couple minutes for the implementation of the Elk-Server
+- ansible-playbook Install_elk.yml (configures Elk-Server and starts the Elk container on the Elk-Server) wait a couple minutes for the implementation of the Elk-Server
 - cd /etc/ansible/roles/
-- ansible-playbook filebeat-playbook.yml (installs Filebeat and Metricbeat)
+- ansible-playbook Install_filebeat-playbook.yml (installs Filebeat and Metricbeat)
 - open a new web browser (Elk-Server 10.1.0.4:5601) This will bring up the Kibana Web Portal 
