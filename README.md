@@ -112,7 +112,7 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
 - sudo docker start container (name of the container)
 - sudo docker attach container (name of the container)
 - cd /etc/ansible/
-- ansible-playbook Install_elk.yml (configures Elk-Server and starts the Elk container on the Elk-Server) wait a couple minutes for the implementation of the Elk-Server
+- ansible-playbook Install_elk_playbook.yml (configures Elk-Server and starts the Elk container on the Elk-Server) wait a couple minutes for the implementation of the Elk-Server
 - cd /etc/ansible/roles/
 - ansible-playbook Install_filebeat-playbook.yml (installs Filebeat and Metricbeat)
-- open a new web browser (Elk-Server 10.1.0.4:5601) This will bring up the Kibana Web Portal 
+- open a new web browser session and navigate to (Elk-Server 10.1.0.4:5601) This will bring up the Kibana Web Portal 
