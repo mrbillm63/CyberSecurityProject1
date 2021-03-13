@@ -59,7 +59,7 @@ A summary of the access policies in place can be found in the table below.
 
 | Name                 | Publicly Accessible | Allowed IP Addresses   |
 |----------------------|---------------------|------------------------|
-| Jump-Box-Provisioner | Yes                 | Personal IP            |
+| Jump-Box-Provisioner | Yes                 | Admin Personal IP      |
 | Red-Web-1            | No                  | 10.0.0.4               |
 | Red-Web-2            | No                  | 10.0.0.4               |
 | ELK-Stack            | Yes                 | 40.114.71.170 10.0.0.4 |
@@ -101,7 +101,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
  _SSH into the control node (Jump-Box) and follow the steps below:_
 -   Copy the Install_filebeat_Playbook.yml file to the /etc/ansible/roles/files/ directory.
 -   Update the configuration file to include the Private IP (10.1.0.4) of the Elk-Server to the ElasticSearch and Kibana sections of the configuration file
-  - Run the playbook, and navigate to http://[10.1.0.4]:5601/app/kibana  to check that the installation worked as expected.
+  - Run the playbook, and login to elk stack sever  to http://[0.0.0.0]:5601/app/kibana  to check that the installation worked as     expected.
 
 -  Create a new playbook in the /etc/ansible/roles/ directory that will install, drop in the updated configuration file, enable and configure system module, run the filebeat setup, and start the filebeat service.
 
